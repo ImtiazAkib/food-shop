@@ -1,5 +1,6 @@
 import hero from "../../../assets/26515840.jpg";
 import Package from "../Package/Package";
+import Solutions from "../Solutions/Solutions";
 
 const Home = () => {
   return (
@@ -28,6 +29,8 @@ const Home = () => {
       </div>
       {/*----------------------- business packages ---------------------------------*/}
       <Package />
+      {/*----------------------- business solutions ---------------------------------*/}
+      <Solutions />
     </>
   );
 };

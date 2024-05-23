@@ -5,10 +5,27 @@ const Navbar = () => {
     <>
       <div className="navbar fixed z-[100]">
         <div className="flex-1">
-          <a className="btn btn-outline text-xl">Logo</a>
+          <a className="btn btn-outline">Logo</a>
         </div>
         <div className="flex-none">
-          <div className="drawer drawer-end">
+          <ul className="menu menu-horizontal hidden lg:flex gap-3">
+            <li>
+              <Link className="btn btn-outline">Services</Link>
+            </li>
+            <li>
+              <Link className="btn btn-outline">Projects</Link>
+            </li>
+            <li>
+              <Link className="btn btn-outline">Team</Link>
+            </li>
+            <li>
+              <Link className="btn btn-outline">Blog</Link>
+            </li>
+            <li>
+              <Link className="btn btn-outline">Contact</Link>
+            </li>
+          </ul>
+          <div className="drawer drawer-end lg:hidden">
             <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content">
               {/* Page content here */}
