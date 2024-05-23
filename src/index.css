@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-first {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+}
+
+.bg-image {
+  background-image: url("./assets/27484775_wallpaper_27-removebg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 55%;
+}
+
+.animation-gradient {
+  animation: gradient 15s ease infinite;
+}
+
+.animation-blue {
+  animation: blue 5s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes blue {
+  0% {
+    background-color: #00466f;
+  }
+
+  50% {
+    background-color: #006490;
+  }
+  100% {
+    background-color: #006490;
+  }
+}
