@@ -86,9 +86,9 @@ const data = [
 const Prices = () => {
   return (
     <div className="">
-      <div className="flex justify-center bg-[#37B1E0] py-20">
-        <div className="basis-[40ch] md:basis-[70ch] text-center">
-          <h1 className="text-2xl lg:text-4xl font-bold mb-0 lg:mb-10">
+      <div className="flex justify-center py-20">
+        <div className="basis-[40ch] md:basis-[80ch] text-center">
+          <h1 className="text-2xl lg:text-5xl font-bold mb-0 lg:mb-10">
             Lorem ipsum dolor sit amet.
           </h1>
           <p>
@@ -98,7 +98,7 @@ const Prices = () => {
           </p>
         </div>
       </div>
-      <div className="grid grid-cols-4 gap-5 mx-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mx-2 lg:mx-10">
         {data.map((singleData, index) => (
           <div
             className="card bg-base-100 shadow-xl border-solid border-2"

@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+
 .bg-first {
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
@@ -15,12 +22,16 @@
   background-position-y: 55%;
 }
 
-.animation-gradient {
-  animation: gradient 15s ease infinite;
+.project:hover.project > figcaption {
+  opacity: 1;
+}
+.project:hover.project > figure {
+  transform: scale(1.25);
+  transition: transform 0.3s ease-out;
 }
 
-.animation-blue {
-  animation: blue 5s ease infinite;
+.animation-gradient {
+  animation: gradient 15s ease infinite;
 }
 
 @keyframes gradient {
@@ -33,18 +44,5 @@
   }
   100% {
     background-position: 0% 50%;
-  }
-}
-
-@keyframes blue {
-  0% {
-    background-color: #00466f;
-  }
-
-  50% {
-    background-color: #006490;
-  }
-  100% {
-    background-color: #006490;
   }
 }

@@ -1,6 +1,7 @@
 import hero from "../../../assets/26515840.jpg";
 import Package from "../Package/Package";
 import Prices from "../Prices/Prices";
+import Projects from "../Projects/Projects";
 import Solutions from "../Solutions/Solutions";
 
 const Home = () => {
@@ -35,7 +36,9 @@ const Home = () => {
       {/*----------------------- Package prices ---------------------------------*/}
       <Prices />
       {/*----------------------- PERSONALIZED ON REQUEST ---------------------------------*/}
-      <Package />
+      <Package solution={"solution"} />
+      {/*----------------------- Our Projects ---------------------------------*/}
+      <Projects />
     </>
   );
 };
