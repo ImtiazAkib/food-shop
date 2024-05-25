@@ -1,4 +1,4 @@
-import hero from "../../../assets/26515840.jpg";
+import hero from "../../../assets/Header Banner.png";
 import Package from "../Package/Package";
 import Prices from "../Prices/Prices";
 import Projects from "../Projects/Projects";
@@ -8,20 +8,23 @@ const Home = () => {
   return (
     <>
       {/*----------------------- top hero section ---------------------------------*/}
-      <div className="hero min-h-screen bg-first animation-gradient pt-20 lg:pt-5">
-        <div className="hero-content flex-col lg:flex-row-reverse gap-14 lg:gap-28">
+      <div className="hero lg:min-h-screen bg-first animation-gradient pt-20 md:pt-36 md:pb-36">
+        <div className="hero-content flex-col md:flex-row-reverse gap-14 lg:gap-20">
           <img
             src={hero}
-            className="lg:max-w-md max-w-xs rounded-lg shadow-2xl"
+            className="lg:max-w-lg max-w-xs rounded-lg shadow-2xl"
           />
-          <div>
-            <h1 className="text-4xl lg:text-6xl font-bold lg:leading-[4rem] text-[#02006b]">
-              WEBSEITEN OHNE TEMPLATES MIT FIXEN PREISEN
+          <div className="text-justify">
+            <h1 className="text-2xl lg:text-5xl font-bold lg:leading-[4rem] text-[#02006b]">
+              Custom Designed Websites I SEO I Digital Marketing With Fixed
+              Costs
             </h1>
-            <p className="py-6 text-white text-lg">
-              Wenn Sie schnell online gehen möchten , jedoch keine fertige
-              Vorlage wünschen, die Ihr Konkurrent schon besitzt, dann ist
-              PUSH2HIT die perfekte Lösung für Ihr Unternehmen.
+            <p className="py-6 text-white text-md lg:text-lg">
+              Go to a digital trip with WebTrails : Custom Website Marketing
+              Design & Expert SEO Specifically, Our Transparent Fixed Pricing
+              Guarantees A Clear Online Presence, Higher Search Rankings &
+              Enhanced Marketing Impact without any hidden charges or surprises!
+              Your Dream Adventure Awaits NOW!
             </p>
             <button className="btn glass px-10 h-[3.5rem] lg:text-lg hover:bg-inherit">
               Get Started
