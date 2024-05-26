@@ -1,4 +1,5 @@
-import hero from "../../../assets/Header Banner.png";
+// import hero from "../../../assets/Header Banner.png";
+import hero2 from "../../../assets/emile-perron.jpg";
 import Faq from "../Faq/Faq";
 import Package from "../Package/Package";
 import Prices from "../Prices/Prices";
@@ -10,14 +11,18 @@ const Home = () => {
   return (
     <>
       {/*----------------------- top hero section ---------------------------------*/}
-      <div className="hero lg:min-h-screen bg-first animation-gradient pt-20 md:pt-36 md:pb-36">
-        <div className="hero-content flex-col md:flex-row-reverse gap-14 lg:gap-20">
-          <img
+      <div
+        className="hero lg:min-h-screen"
+        style={{ backgroundImage: `url(${hero2})` }}
+      >
+        <div className="hero-overlay bg-opacity-60"></div>
+        <div className="hero-content text-center">
+          {/* <img
             src={hero}
             className="lg:max-w-lg max-w-xs rounded-lg shadow-2xl"
-          />
-          <div className="text-justify">
-            <h1 className="text-2xl lg:text-5xl font-bold lg:leading-[4rem] text-[#02006b]">
+          /> */}
+          <div className="">
+            <h1 className="text-2xl lg:text-5xl font-bold lg:leading-[4rem] text-slate-700">
               Custom Designed Websites I SEO I Digital Marketing With Fixed
               Costs
             </h1>
