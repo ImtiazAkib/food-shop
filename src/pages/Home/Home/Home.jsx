@@ -12,21 +12,17 @@ const Home = () => {
     <>
       {/*----------------------- top hero section ---------------------------------*/}
       <div
-        className="hero lg:min-h-screen"
+        className="hero min-h-screen"
         style={{ backgroundImage: `url(${hero2})` }}
       >
         <div className="hero-overlay bg-opacity-60"></div>
-        <div className="hero-content text-center">
-          {/* <img
-            src={hero}
-            className="lg:max-w-lg max-w-xs rounded-lg shadow-2xl"
-          /> */}
-          <div className="">
-            <h1 className="text-2xl lg:text-5xl font-bold lg:leading-[4rem] text-slate-700">
+        <div className="hero-content justify-start p-0">
+          <div className="text-white basis-[80ch]">
+            <h1 className="text-2xl lg:text-5xl font-bold lg:leading-[4rem]">
               Custom Designed Websites I SEO I Digital Marketing With Fixed
               Costs
             </h1>
-            <p className="py-6 text-white text-md lg:text-lg">
+            <p className="py-6 text-md lg:text-lg">
               Go to a digital trip with WebTrails : Custom Website Marketing
               Design & Expert SEO Specifically, Our Transparent Fixed Pricing
               Guarantees A Clear Online Presence, Higher Search Rankings &
