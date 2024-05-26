@@ -11,6 +11,8 @@ import { Navigation } from "swiper/modules";
 import avatar1 from "../../../assets/test1.jpg";
 import avatar2 from "../../../assets/test2.jpg";
 import avatar3 from "../../../assets/test3.jpg";
+import avatar4 from "../../../assets/test4.jpg";
+import avatar5 from "../../../assets/test5.jpg";
 
 const data = [
   {
@@ -29,12 +31,12 @@ const data = [
     name: "Susanne Boehm",
   },
   {
-    img: avatar1,
+    img: avatar4,
     info: "Working with webtrails.de was a game-changer for our business. Their expertise in web development and commitment to delivering results ensured our project was a success. We're grateful for their professionalism and creativity.",
     name: "Swen Peters",
   },
   {
-    img: avatar1,
+    img: avatar5,
     info: "The website developed by webtrails.de has been instrumental in our online presence. Their team's innovative approach, attention to detail, and responsiveness made the entire process a breeze. We're thrilled with the outcome and look forward to future collaborations.",
     name: "Frank Bader",
   },
@@ -43,7 +45,7 @@ const data = [
 const Testimonial = () => {
   return (
     <div className="mx-0 md:mx-96 my-20">
-      <h1 className="sm:text-3xl text-2xl font-medium text-center title-font mb-10">
+      <h1 className="sm:text-3xl text-2xl font-medium text-center divider divider-primary title-font mb-10">
         Testimonials
       </h1>
       <Swiper navigation={true} modules={[Navigation]} className="mySwiper">

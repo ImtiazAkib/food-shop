@@ -53,10 +53,9 @@ const Services = () => {
               The Perfect Services We’re Offering
             </h1>
             <p className="py-6">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-              ipsum suspendisse ultrices. Risus commodo viverra maecenas
-              accumsan lacus vel facilisis.
+              At WebTrails.de, we offer a comprehensive range of services
+              designed to help your business succeed online. Our expert team
+              delivers tailored solutions in the following areas.
             </p>
             <Button info="Get Started" />
           </div>

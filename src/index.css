@@ -22,8 +22,20 @@
   );
 }
 
-.bg-icon-starter {
+/* .bg-icon-starter {
   background-image: linear-gradient(-160deg, #4b3eff 0, #22b1ff 99%);
+} */
+
+.collapse-plus > .collapse-title::after {
+  display: flex;
+  height: 1.85rem;
+  width: 1.85rem;
+  border-radius: 3px;
+  padding: 0px;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(-160deg, #4b3eff 0, #22b1ff 99%);
+  color: white;
 }
 
 /* .package-icon:hover .bg-starter {
