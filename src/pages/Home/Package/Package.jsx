@@ -1,98 +1,48 @@
-import { FaLayerGroup } from "react-icons/fa";
-import { FaLock } from "react-icons/fa";
-import { RiZoomInLine } from "react-icons/ri";
-import { FaPencilAlt } from "react-icons/fa";
-import { IoMdCheckmark } from "react-icons/io";
+import { BsPersonGear } from "react-icons/bs";
+import { RiTeamLine } from "react-icons/ri";
+import { RiPagesLine } from "react-icons/ri";
 
 const data = [
   {
-    icon: <FaLayerGroup />,
-    info: "Basic SEO",
+    icon: <BsPersonGear />,
+    title: "Great Experiences",
+    info: "At our web development agency, we craft great experiences through innovative design, seamless functionality, and user-centric solutions. We aim to create memorable and impactful digital interactions that drive success for our clients.",
   },
   {
-    icon: <FaLock />,
-    info: "Basic Graphics Design",
+    icon: <RiPagesLine />,
+    title: "Reference for Result",
+    info: "Great experiences are impactful moments that our web development agency strives to create through innovative design, seamless functionality, and exceptional user engagement, leaving lasting impressions and driving success for our clients.",
   },
   {
-    icon: <RiZoomInLine />,
-    info: "Work Proof Result",
-  },
-  {
-    icon: <FaPencilAlt />,
-    info: "Website Main Code",
-  },
-];
-const data2 = [
-  {
-    icon: <FaLayerGroup />,
-    info: "Standard support",
-  },
-  {
-    icon: <FaLock />,
-    info: "Initial consultation",
-  },
-  {
-    icon: <RiZoomInLine />,
-    info: "Mobile responsive design",
-  },
-  {
-    icon: <FaPencilAlt />,
-    info: "SSL Certificate",
-  },
-  {
-    icon: <FaLock />,
-    info: "Domain & Hosting",
+    icon: <RiTeamLine />,
+    title: "Experienced Team",
+    info: "Our web development agency boasts a skilled and seasoned team dedicated to delivering outstanding results. With expertise in design, development, and digital strategy, we transform ideas into successful, user-friendly websites.",
   },
 ];
 
-const Package = (info) => {
+const Package = () => {
   return (
-    <section className="body-font my-20">
-      <div className="container px-5 pt-16 mx-auto">
-        <div className="flex flex-col text-center w-full mb-20">
-          <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4">
-            ALL PACKAGES INCLUDE
-          </h1>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 -m-2 mx-0 lg:mx-36">
-          {info.solution == "solution"
-            ? data2.map((singleData, index) => (
-                <div className="relative" key={index}>
-                  <div className="h-full flex justify-start items-center border-gray-200 border p-4 rounded-lg shadow-lg py-10 bg-white">
-                    <div className="w-14 h-14 shadow-sm rounded-md text-white text-xl flex items-center justify-center mr-5 bg-pink-700">
-                      {singleData.icon}
-                    </div>
-                    <div>
-                      <h2 className="text-gray-900 font-medium text-2xl">
-                        {singleData.info}
-                      </h2>
-                    </div>
-                  </div>
-                  <div className="h-12 w-12 flex items-center justify-center text-3xl shadow-sm text-white bg-blue-900 rounded-[50%] absolute top-[-15px] right-[-15px]">
-                    <IoMdCheckmark />
-                  </div>
-                </div>
-              ))
-            : data.map((singleData, index) => (
-                <div className="relative" key={index}>
-                  <div className="h-full flex justify-start items-center border-gray-200 border p-4 rounded-lg shadow-lg py-10 bg-white">
-                    <div className="w-14 h-14 shadow-sm rounded-md text-white text-xl flex items-center justify-center mr-5 bg-pink-700">
-                      {singleData.icon}
-                    </div>
-                    <div>
-                      <h2 className="text-gray-900 font-medium text-2xl">
-                        {singleData.info}
-                      </h2>
-                    </div>
-                  </div>
-                  <div className="h-12 w-12 flex items-center justify-center text-3xl shadow-sm text-white bg-blue-900 rounded-[50%] absolute top-[-15px] right-[-15px]">
-                    <IoMdCheckmark />
-                  </div>
-                </div>
-              ))}
+    <section className="body-font mb-10 -mt-5">
+      <div className="container px-5 mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 -m-2 mx-0 lg:mx-20">
+          {data.map((singleData, index) => (
+            <div
+              className="flex flex-col justify-start py-8 px-10 gap-5 border-gray-200 border rounded-lg shadow-lg bg-white package-icon"
+              key={index}
+            >
+              <div className="w-16 h-16 shadow-sm rounded-md text-white text-3xl flex items-center justify-center bg-starter">
+                {singleData.icon}
+              </div>
+              <div className="text-justify">
+                <h2 className="text-gray-900 font-bold text-2xl mb-2">
+                  {singleData.title}
+                </h2>
+                <p className="text-gray-500">{singleData.info}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
-      {/* <div className="h-[300px] bg-image"></div> */}
     </section>
   );
 };

@@ -1,34 +1,37 @@
 import { Link } from "react-router-dom";
+import logo from "../../../assets/Logo.png";
+import Button from "../Button/Button";
 
 const Navbar = () => {
   return (
     <>
-      <div className="navbar fixed z-[100]">
+      <div className="navbar fixed z-[100] shadow-sm text-white bg-[hsla(0,0%,4%,.25)]">
         <div className="flex-1">
-          <a className="btn btn-outline">Logo</a>
+          <a className="w-36">
+            <img src={logo} alt="logo" />
+          </a>
         </div>
         <div className="flex-none">
-          <ul className="menu menu-horizontal hidden lg:flex gap-3">
+          <ul className="menu menu-horizontal hidden lg:flex items-center gap-3 nav-link">
             <li>
-              <Link className="btn btn-outline">Services</Link>
+              <Link className="">Services</Link>
             </li>
             <li>
-              <Link className="btn btn-outline">Projects</Link>
+              <Link className="">Projects</Link>
             </li>
             <li>
-              <Link className="btn btn-outline">Team</Link>
+              <Link className="">Team</Link>
             </li>
             <li>
-              <Link className="btn btn-outline">Blog</Link>
+              <Link className="">Blog</Link>
             </li>
             <li>
-              <Link className="btn btn-outline">Contact</Link>
+              <Button info="Contact" />
             </li>
           </ul>
           <div className="drawer drawer-end lg:hidden">
             <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content">
-              {/* Page content here */}
               <label
                 htmlFor="my-drawer-4"
                 className="drawer-button btn btn-outline text-md md:px-8"
@@ -43,7 +46,6 @@ const Navbar = () => {
                 className="drawer-overlay"
               ></label>
               <ul className="menu p-4 w-56 md:w-80 min-h-full bg-base-200 text-base-content">
-                {/* Sidebar content here */}
                 <li>
                   <Link>Services</Link>
                 </li>

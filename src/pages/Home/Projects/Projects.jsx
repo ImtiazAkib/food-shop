@@ -46,35 +46,69 @@ const data = [
     img: pic9,
   },
 ];
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+// import required modules
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 const Projects = () => {
   return (
-    <div>
-      <div className="flex justify-center pb-20">
+    <div className="bg-[#000611] text-white py-10 pb-20">
+      <div className="flex justify-center py-20">
         <div className="basis-[40ch] md:basis-[80ch] text-center">
-          <h1 className="text-3xl lg:text-5xl mb-5 lg:mb-10">Our Projects</h1>
-          <p>Here are a few design projects I&apos;ve worked on recently</p>
+          <h1 className="text-lg lg:text-2xl font-bold mb-5 lg:mb-10 divider divider-primary">
+            Our Projects
+          </h1>
+          <p>
+            We&apos;ve discovered that most of the projects we bid on fall into
+            distinct categories. To simplify your choice, we&apos;ve developed
+            three different products. Each of these products is designed for a
+            specific purpose and delivers a unique result.
+          </p>
         </div>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 mx-5 lg:mx-10 relative">
-        {data.map((singleData, index) => (
-          <div
-            className="relative project overflow-hidden h-80 rounded-md flex justify-center"
-            key={index}
-          >
-            <figure className="text-center">
-              <img src={singleData.img} alt="project" />
-            </figure>
-            <figcaption
-              className={`text-center px-10 lg:px-20 bg-slate-500 absolute top-0 bottom-0 flex items-center flex-col justify-center opacity-0 transition-opacity duration-300 `}
-            >
-              <p>{singleData.info}</p>
-              <button className="btn btn-outline mt-3 px-16 rounded-md capitalize">
-                Visit project
-              </button>
-            </figcaption>
-          </div>
-        ))}
+      <div className="mx-10">
+        <Swiper
+          autoplay={{
+            delay: 4500,
+            disableOnInteraction: false,
+          }}
+          loop={true}
+          navigation={true}
+          slidesPerView={1}
+          spaceBetween={10}
+          pagination={{
+            clickable: true,
+          }}
+          breakpoints={{
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 40,
+            },
+            1024: {
+              slidesPerView: 4,
+              spaceBetween: 50,
+            },
+          }}
+          modules={[Pagination, Navigation, Autoplay]}
+          className="mySwiper"
+        >
+          {data.map((singleData, index) => (
+            <SwiperSlide key={index}>
+              <img src={singleData.img} alt="project" className="h-full" />
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </div>
   );

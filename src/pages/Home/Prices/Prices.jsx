@@ -1,5 +1,6 @@
 import web from "../../../assets/app-development.png";
 import social from "../../../assets/social-media.png";
+import Button from "../../Shared/Button/Button";
 
 const data = [
   {
@@ -108,10 +109,10 @@ const data2 = [
 
 const Prices = () => {
   return (
-    <div className="">
+    <div className="bg-[#000611] py-10 pb-20 text-white">
       <div className="flex justify-center py-20">
         <div className="basis-[40ch] md:basis-[80ch] text-center">
-          <h1 className="text-2xl lg:text-5xl font-bold mb-0 lg:mb-10">
+          <h1 className="text-lg lg:text-2xl font-bold mb-5 lg:mb-10 divider divider-primary">
             PACKAGES AND PRICES
           </h1>
           <p>
@@ -122,13 +123,13 @@ const Prices = () => {
           </p>
         </div>
       </div>
-      <h1 className="text-2xl lg:text-5xl font-bold mb-0 lg:my-20 text-center">
+      <h1 className="text-2xl lg:text-5xl font-bold mb-5 lg:my-20 text-center uppercase">
         Web Packages
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mx-2 lg:mx-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mx-2 lg:mx-28">
         {data.map((singleData, index) => (
           <div
-            className="card bg-base-100 shadow-xl border-solid border-2 rounded-md"
+            className="card bg-[#060f20] hover:border-opacity-0 transition-opacity shadow-xl border-solid border-2 border-[#252525] rounded-md overflow-hidden"
             key={index}
           >
             <figure className="px-10 pt-10 text-red-600">
@@ -156,19 +157,19 @@ const Prices = () => {
                 <p className="text-lg font-semibold">
                   Price:€{singleData.price}
                 </p>
-                <button className="btn btn-outline">Buy Now</button>
+                <Button info="Buy Now" />
               </div>
             </div>
           </div>
         ))}
       </div>
-      <h1 className="text-2xl lg:text-5xl font-bold mb-0 lg:my-20 text-center">
+      <h1 className="text-lg lg:text-5xl font-bold my-5 lg:my-20 text-center uppercase">
         Digital Marketing Services
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mx-2 lg:mx-20">
         {data2.map((singleData, index) => (
           <div
-            className="card bg-base-100 shadow-xl border-solid border-2 rounded-md"
+            className="card bg-[#060f20] hover:border-opacity-0 transition-opacity shadow-xl border-solid border-2 border-[#252525] rounded-md overflow-hidden"
             key={index}
           >
             <figure className="px-10 pt-10 text-red-600">
@@ -196,7 +197,7 @@ const Prices = () => {
                 <p className="text-lg font-semibold">
                   Price:€{singleData.price}
                 </p>
-                <button className="btn btn-outline">Buy Now</button>
+                <Button info="Buy Now" />
               </div>
             </div>
           </div>
