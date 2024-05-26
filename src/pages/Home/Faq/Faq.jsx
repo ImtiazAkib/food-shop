@@ -30,10 +30,10 @@ const Faq = () => {
           />
           <div>
             <div className="my-5">
-              <h1 className="text-xl w-[30rem] font-bold text-[#3B6AFF] mb-5 lg:mb-10 divider divider-start divider-primary">
+              <h1 className="text-xl lg:w-[30rem] font-bold text-[#3B6AFF] mb-5 lg:mb-10 divider divider-start divider-primary">
                 Frequently asked questions
               </h1>
-              <h2 className="text-[1.4rem] md:text-3xl lg:text-4xl font-bold lg:leading-[3rem]">
+              <h2 className="text-[1.4rem] md:text-3xl lg:text-4xl font-bold">
                 You Are Confused! Question & Answers.
               </h2>
             </div>

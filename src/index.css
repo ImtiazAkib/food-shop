@@ -9,6 +9,10 @@
   font-style: normal;
 }
 
+/* body {
+  background-color: #000611;
+} */
+
 .btn-starter {
   background: linear-gradient(-160deg, #4b3eff 0, #22b1ff 99%);
   border-radius: 3px;
@@ -22,10 +26,6 @@
   );
 }
 
-/* .bg-icon-starter {
-  background-image: linear-gradient(-160deg, #4b3eff 0, #22b1ff 99%);
-} */
-
 .collapse-plus > .collapse-title::after {
   display: flex;
   height: 1.85rem;
@@ -37,11 +37,6 @@
   background-image: linear-gradient(-160deg, #4b3eff 0, #22b1ff 99%);
   color: white;
 }
-
-/* .package-icon:hover .bg-starter {
-  background-image: linear-gradient(-160deg, #4b3eff 0, #22b1ff 99%);
-  transition: all 0.5s cubic-bezier(0.24, 0.74, 0.58, 1);
-} */
 
 .card::after,
 .card::before {
@@ -89,7 +84,6 @@
   text-align: center;
   font-size: 18px;
   background: #fff;
-  /* Center slide text vertically */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -106,9 +100,3 @@
 .swiper-button-next {
   color: black;
 }
-
-/* .swiper-button-prev:hover,
-.swiper-button-next:hover {
-  color: coral;
-  transition: color 0.3s linear;
-} */
