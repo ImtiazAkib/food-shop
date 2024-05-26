@@ -47,10 +47,10 @@ const data2 = [
 
 const Package = (info) => {
   return (
-    <section className="text-gray-600 body-font my-20">
+    <section className="body-font my-20">
       <div className="container px-5 pt-16 mx-auto">
         <div className="flex flex-col text-center w-full mb-20">
-          <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
+          <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4">
             ALL PACKAGES INCLUDE
           </h1>
         </div>
@@ -92,7 +92,7 @@ const Package = (info) => {
               ))}
         </div>
       </div>
-      <div className="h-[300px] bg-image"></div>
+      {/* <div className="h-[300px] bg-image"></div> */}
     </section>
   );
 };

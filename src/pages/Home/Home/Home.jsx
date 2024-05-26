@@ -1,4 +1,5 @@
 import hero from "../../../assets/Header Banner.png";
+import Faq from "../Faq/Faq";
 import Package from "../Package/Package";
 import Prices from "../Prices/Prices";
 import Projects from "../Projects/Projects";
@@ -42,6 +43,8 @@ const Home = () => {
       <Package solution={"solution"} />
       {/*----------------------- Our Projects ---------------------------------*/}
       <Projects />
+      {/*----------------------- Our Projects ---------------------------------*/}
+      <Faq />
     </>
   );
 };

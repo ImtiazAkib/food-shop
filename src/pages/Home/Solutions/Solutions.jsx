@@ -26,7 +26,7 @@ const Solutions = () => {
             <h1 className="text-[1.4rem] md:text-3xl lg:text-4xl font-bold lg:leading-[3rem] text-[#02006b]">
               WEBSITE DESIGN AND DIGITAL MARKETING SOLUTIONS FOR ALL INDUSTRY
             </h1>
-            <p className="py-6 text-white text-md md:text-lg">
+            <p className="py-6 text-md md:text-lg">
               Take Your Business to New Heights with Custom Website Design and
               Digital Marketing Solution. Our expertise is geared towards
               helping companies win online. We will help you create user
