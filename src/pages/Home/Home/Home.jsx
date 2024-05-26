@@ -4,6 +4,7 @@ import Package from "../Package/Package";
 import Prices from "../Prices/Prices";
 import Projects from "../Projects/Projects";
 import Solutions from "../Solutions/Solutions";
+import Testimonial from "../Testimonial/Testimonial";
 
 const Home = () => {
   return (
@@ -43,6 +44,8 @@ const Home = () => {
       <Package solution={"solution"} />
       {/*----------------------- Our Projects ---------------------------------*/}
       <Projects />
+      {/*----------------------- Our Projects ---------------------------------*/}
+      <Testimonial />
       {/*----------------------- Our Projects ---------------------------------*/}
       <Faq />
     </>
