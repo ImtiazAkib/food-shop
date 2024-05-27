@@ -7,6 +7,7 @@ import Prices from "../Prices/Prices";
 import Projects from "../Projects/Projects";
 import Services from "../Services/Services";
 import Solutions from "../Solutions/Solutions";
+import Team from "../Team/Team";
 import Testimonial from "../Testimonial/Testimonial";
 
 const Home = () => {
@@ -37,6 +38,8 @@ const Home = () => {
       </div>
       {/*----------------------- business packages ---------------------------------*/}
       <Package />
+      {/*----------------------- Our Team ---------------------------------*/}
+      <Team />
       {/*----------------------- business solutions ---------------------------------*/}
       <Solutions />
       {/*----------------------- Services ---------------------------------*/}
